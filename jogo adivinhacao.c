@@ -1,28 +1,37 @@
-int main(){
-    // imprime cabecalho do nosso jogo
-    printf("**********");
-    printf("*Bem-vindo ao nosso jogo de adivinhação*\n");
-    printf("**********\n");
-    
-    int numerosecreto = 17;
-    //armazenar o chute
-    int chute;
-    printf ("Qual é o seu chute\n");
-    
-    scanf("%d", & chute);
-    printf ("seu chute foi %d \n", chute);
-    //condições e loops 
+// Online C compiler to run C program online
+#include <stdio.h>
 
-    if(chute==numerosecreto){
-    printf ( "você acertou!\n");
+int main() {
+    // Imprime o cabeçalho do jogo
+    printf("****************************************\n");
+    printf("*Bem vindo ao nosso jogo de adivinhação*\n");
+    printf("****************************************\n");
     
-  }else{
-      if( chute > numerosecreto)
-     printf( " você errou! que pena \n");
-     printf( " O seu chute foi maior que o número secreto, tente novamente \n");
-     
-     if ( chute < numerosecreto){
-      printf ( " você errou! que pena! \n");
-      printf(" O seu chute  foi menor que o número secreto, tente novamente \n");
-  }
-}
+    int numerosecreto = 15;
+   // armazenar o chute
+    int chute;
+        printf("Qual é o seu chute?");
+        scanf("%d", &chute);
+        printf("Seu chute foi %d \n", chute);
+        
+            //SE O CHUTE FOR IGUAL AO NÚMERO SECRETO
+    
+    if(chute == numerosecreto){
+        printf("Parabéns!! Você acertou!!\n");
+        printf("Jogue de novo, você é um bom jogador!\n");
+    //CASO CONTRÁRIO
+    }else{
+        if(chute > numerosecreto){
+            printf("O seu chute foi maior que o número secreto, tente novamente. \n");
+        if(chute < numerosecreto){
+                printf("O seu chute foi menor que o número secreto, tente novamente. \n");
+            }
+            
+        }
+        printf("Você errou!!\n");
+        printf("Não desanime, tente novamente! \n");
+        
+    }
+
+
+    
