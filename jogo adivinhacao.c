@@ -1,4 +1,4 @@
-int main() {
+int main(){
     // imprime cabecalho do nosso jogo
     printf("**********");
     printf("*Bem-vindo ao nosso jogo de adivinhação*\n");
@@ -15,7 +15,14 @@ int main() {
 
     if(chute==numerosecreto){
     printf ( "você acertou!\n");
-  }else {
-   printf ("você errou!\n");
+    
+  }else{
+      if( chute > numerosecreto)
+     printf( " você errou! que pena \n");
+     printf( " O seu chute foi maior que o número secreto, tente novamente \n");
+     
+     if ( chute < numerosecreto){
+      printf ( " você errou! que pena! \n");
+      printf(" O seu chute  foi menor que o número secreto, tente novamente \n");
   }
 }
